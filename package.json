@@ -6,13 +6,17 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
     "eslint": "./node_modules/.bin/eslint ./",
-    "eslint:fix": "./node_modules/.bin/eslint ./ --fix"
+    "eslint:fix": "./node_modules/.bin/eslint ./ --fix",
+    "test:coverage": "nyc report --reporter=lcov",
+    "codecov": "codecov --token=1cd5aadb-9af6-438c-abac-a2fcb124ecd3"
   },
   "author": "claudio,alvaro,sebastian",
   "license": "MIT",
   "devDependencies": {
+    "codecov": "^2.3.0",
     "eslint": "^4.8.0",
     "eslint-plugin-mocha": "^4.11.0",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1"
   }
 }
