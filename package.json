@@ -4,11 +4,15 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "eslint": "./node_modules/.bin/eslint ./",
+    "eslint:fix": "./node_modules/.bin/eslint ./ --fix"
   },
   "author": "claudio,alvaro,sebastian",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-plugin-mocha": "^4.11.0",
     "mocha": "^4.0.1"
   }
 }

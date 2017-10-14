@@ -11,7 +11,7 @@ v6.10.2
 npm --version
 5.4.2
 ```
-- Instalar MOCHA Globalmente o Localmente (opcional)
+- Instalar MOCHA Globalmente (opcional)
 ```
 sudo npm install --global mocha
 ```
@@ -28,7 +28,7 @@ npm install --save-dev mocha
 
 - Probar que el archivo se ejecuta
 ```
-node index.js
+node canculadora.js
 ```
 
 - Ejecutar las pruebas con Mocha
@@ -66,4 +66,53 @@ describe('test func a', function() {
 
 
 });
+```
+
+
+
+- Eslint
+
+- instalar eslint
+```
+npm install eslint --save-dev
+```
+- Hacer el setting up
+```
+./node_modules/.bin/eslint --init
+```
+
+- 1 `Answer questions about your style`
+- 2 `Are you using ECMAScript 6 features? (y/N)`
+`y`
+- 3 `Are you using ES6 modules?`
+`y`
+- 4 `Where will your code run?` (Seleccionar con espaciador)
+`Node`
+- 5 `Do you use JSX?`
+`n`
+- 6 `What style of indentation do you use?`
+```
+  > Tabs
+  Space
+```
+- 7 `What quotes do you use for strings?`
+`Double`
+- 8 `What line endings do you use?`
+`Unix`
+- 9 `Do you require semicolons?`
+`n`
+- 10 `What format do you want your config file to be in?`
+```
+  JavaScript
+  YAML
+❯ JSON
+```
+
+
+
+- Hacer convivir mocha con eslint
+
+- en `.eslintrc` agregar el ambiente de mocha
+```
+"mocha": true
 ```
