@@ -116,3 +116,23 @@ npm install eslint --save-dev
 ```
 "mocha": true
 ```
+
+- Prueba Automatizada con travis
+
+- Se crea archivo de Travis
+
+
+- Revision de covertura con codecov
+- se integra codecov a github
+- se agrega dependencia de codecov
+```
+npm install --save-dev codecov
+```
+- agregar istambul para generar el archivo de covertura
+```
+npm install --save-dev nyc
+```
+- Ejecutar test con covertura
+```
+"test:coverage": "nyc mocha",
+```
