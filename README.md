@@ -1,3 +1,6 @@
+# AUDITORIA TEST
+[![Build Status](https://travis-ci.org/claudioDcv/AuditoriaTrabajo.svg?branch=master)](https://travis-ci.org/claudioDcv/AuditoriaTrabajo) [![codecov](https://codecov.io/gh/claudioDcv/AuditoriaTrabajo/branch/master/graph/badge.svg)](https://codecov.io/gh/claudioDcv/AuditoriaTrabajo)
+
 # MOCHA
 - Test unitario para javascript
 - Corre en Node JS (es similar a la maquina virtual de java)
